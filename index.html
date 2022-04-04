@@ -1,5 +1,59 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 <body>
-Meu site
+    <script>
+                var currentTime = new Date().getHours();
+        if (8 <= currentTime && currentTime < 12) {
+            document.body.classList.add("planoFundo1")
+        }else if (12 <= currentTime && currentTime < 13) {
+            document.body.classList.add("planoFundo2")
+        }else if (13 <= currentTime && currentTime < 18) {
+            document.body.classList.add("planoFundo1")         
+        }else if (18 <= currentTime && currentTime < 22) {
+            document.body.classList.add("planoFundo");  
+        }else {
+            document.body.classList.add("planoFundo");
+        }
+    </script>
+    <style>
+        .planoFundo { 
+  background: url(amimir.jfif) no-repeat center center fixed; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-color: black;
+   background-size: auto 100%;
+}
+        .planoFundo1 { 
+  background: url(working.jpg) no-repeat center center fixed; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-color: black;
+   background-size: cover;
+}
+        .planoFundo2 { 
+  background: url(mucando.jpg) no-repeat center center fixed; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-color: black;
+   background-size: cover;
+}
+        .planoFundo3 { 
+  background: url(facul.jfif) no-repeat center center fixed; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-color: black;
+   background-size: auto 100%;
+}
+    </style>
 </body>
 </html>
